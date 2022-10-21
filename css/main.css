@@ -1,0 +1,216 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+img , svg{
+  display: block;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body
+{
+  font-size:32px;
+}
+
+.site-main{
+  flex-grow: 1;
+}
+
+
+.containere
+{
+  max-width: 1440px; 
+  width:100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+}
+
+.position-fixed {
+}
+
+.header__inner {
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header__logo-img {
+  margin-right: 8px;
+}
+
+.header__nav {
+  display: contents;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.header__item {
+  margin-right:18px;
+}
+
+.header__link {
+  color: #241a1a;
+
+}
+
+.header__link:hover
+{
+  color: #241a1a;
+}
+
+.header__link::after
+{
+  display: block;
+  content: "";
+  width: 22px;
+  right: 0;
+  height: 1px;
+  background-color: #241a1a;
+}
+
+.header__link:hover::after
+{
+  width: 100%;
+  transition: width 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main
+{
+  padding-top: 120px;
+}
+
+
+
+.form{
+  border-right: 1px solid #0000006c;
+}
+
+
+.form__select
+{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.razmer__wrapper
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.radio__razmer-input {
+	display: none;
+}
+
+.radio__label{
+  margin-right: 20px;
+}
+
+
+.radio__label:before {
+	content: '';
+	display: inline-block;
+	width: 150px;
+  height: 150px;
+  background-image: url("../img/pizza-razmer.png");
+  background-position: center ,center;
+  background-size:cover;
+  background-repeat: no-repeat;
+	border-radius: 50%;
+  z-index: 2;
+  transition: transform 0.4s ease;
+
+
+}
+
+.radio__label-sekond::before
+{
+  width: 170px;
+  height: 170px;
+}
+
+.radio__label-thirt::before
+{
+  width: 200px;
+  height: 200px;
+}
+
+
+.radio__razmer-input:checked + .radio__label:before {
+  box-shadow: 0px 0px 45px #D47910,inset 0px 0px 2px 2px #f19824;
+  transform: rotate(60deg);
+}
+
+
+
+.form-check-input
+{
+  top: 20px;
+}
+
+
+.masalliq
+{
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
