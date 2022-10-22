@@ -40,11 +40,11 @@ $$(".form-check-label").forEach((e)=>{
     console.log($(".form-check-input"));
     if(masalliqlar[0] === undefined)
     {
-      $(".form-check-input").setAttribute("required");
+      $(".form-check-input").setAttribute("required",true);
     }
     else
     {
-      $(".form-check-input").removeAttribute("required");
+      $(".form-check-input").removeAttribute("required",true);
     }
 
     console.log(masalliqlar);
